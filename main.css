@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+.quize-app{
+    width:800px;
+    margin: 20px auto;
+    background-color:#f8f8f8;
+    padding: 20px;
+}
+.quize-app .quize-info{
+    background-color: #fff;
+    display: flex;
+    padding: 0 20px 20px;
+}
+.quize-app .quize-info .category{
+    flex: 1;
+}
+.quize-app .quize-info .count{
+    flex: 1;
+    text-align: right;
+}
+.quize-app .quize-area{
+    background-color:#fff;
+    padding: 20px;
+    margin-top: 15px;
+}
+.quize-app .quize-area h2{
+    margin: 0;
+}
+.quize-app .answer-area{
+    background-color: #fff;
+    padding:20px;
+}
+.quize-app .answer-area .class{
+    background-color: #f9f9f9;
+    padding: 15px;
+}
+.quize-app .answer-area .class:not(:last-child){
+    border-bottom: 1px solid #dfdfdf;
+}
+.quize-app .answer-area .class input[type="radio"]:checked + label{
+    color:#0075ff;
+}
+.quize-app .answer-area .class label{
+    cursor: pointer;
+    font-weight: bold;
+    margin-right:5px;
+    font-size: 14px;
+    color:#777;
+    position: relative;
+    top:-1px;
+}
+.quize-app .submit-button{
+    display:block;
+    background-color:#0075ff;
+    color:#fff;
+    width:100%;
+    font-weight: bold;
+    font-size:24px;
+    cursor: pointer;
+    border: none;
+    padding: 15px;
+    border-radius: 6px
+}
+.quize-app .submit-button:focus{
+    outline: none;
+}
+.quize-app .bullets{
+    display: flex;
+    border-top:1px solid #fdfdfd;
+    background-color: #fff;
+    padding: 20px;
+}
+.quize-app .bullets .span{
+    flex: 1;
+    display: flex;
+}
+.quize-app .bullets .span span{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ddd;
+    margin-right: 5px;
+}
+.quize-app .bullets .span span.on{
+    background-color: #0075ff;
+    
+}
+.quize-app .resuts span{
+    font-weight: bold;
+}
+.quize-app .resuts span.bad{
+    color:#dc0a0a;
+}
+.quize-app .resuts span.good{
+    color:#009688;
+}
+.quize-app .resuts span.prefect{
+    color:#0075ff;
+}
